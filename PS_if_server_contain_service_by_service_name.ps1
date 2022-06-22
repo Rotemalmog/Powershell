@@ -1,5 +1,5 @@
 $list = @()
-$Servers = Get-ADComputer -Filter  {operatingSystem -like "windows server 20*"} #get all servers from AD and filter the the operation system to find only the servers
+$Servers = Get-ADComputer -Filter  {operatingSystem -like "windows server 20*"} #get all servers from AD and filter the operation system to find only the servers 2000+
 foreach ($server in $Servers)
 {
 $service = null
